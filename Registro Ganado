@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <ScrollView
+            android:id="@+id/tienda_ScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Fecha Nacimiento"
+                    android:textColor="@color/black"
+                     />
+
+                <EditText
+                    android:id="@+id/ganado_registro_EditText_fecha_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Sexo"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/ganado_registro_Spinner_Sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Tipo Ganado"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/ganado_registro_Spinner_Tipo_Ganado"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Raza"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/ganado_registro_Spinner_Raza"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Color"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/ganado_registro_Spinner_Color"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"></Spinner>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Deberá de seleccionar una foto de su galería de imagenes o tomar una foto para poder continuar con el registro de ganado. Se muestra 2
+opciones la cual deberá dar click."></TextView>
+
+                <LinearLayout
+                    android:layout_width="260dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/ganado_registro_Button_FotoGaleria"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/purple_500"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Galería"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/ganado_registro_Button_FotoCamara"
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/purple_500"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingEnd="5dp"
+                        android:text="Camara"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/ganado_registro_ImageView_Add"
+                    android:layout_width="90dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sinimagen" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white">
+
+            <ImageButton
+                android:id="@+id/ganado_registro_ImageButton_Cerrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:src="@drawable/vector_cerrar" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@color/purple_500"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="10dp"
+                android:text="Registro de ganado"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
