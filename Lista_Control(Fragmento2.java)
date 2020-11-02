@@ -1,0 +1,62 @@
+package com.cbocanegra.tb1;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import androidx.fragment.app.Fragment;
+import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+
+public class Fragmento2 extends Fragment{
+
+    EditText txtRaza, txtGenero, txtPeso, txtVacunas, txtResultado;
+    Button btnIngresar;
+
+    public Fragmento2() {
+        // Required empty public constructor
+    }
+
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragmento_fragmento2, container, false);
+
+        txtRaza = v.findViewById(R.id.txtRaza);
+        txtGenero = v.findViewById(R.id.txtGenero);
+        txtPeso = v.findViewById(R.id.txtPeso);
+        txtVacunas = v.findViewById(R.id.txtVacunas);
+        txtResultado = v.findViewById(R.id.txtResultado);
+        btnIngresar = v.findViewById(R.id.btnIngresar);
+
+        btnIngresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String cadena = "";
+                cadena += "Raza: " + txtRaza.getText().toString();
+                cadena += "\nGénero: " + txtGenero.getText().toString();
+                cadena += "\nPeso: " + txtPeso.getText().toString() + " kg.";
+                cadena += "\nVacunas: " + txtVacunas.getText().toString();
+                txtResultado.setText(cadena);
+            }
+        });
+        return v;
+    }
+
+
+
+}
