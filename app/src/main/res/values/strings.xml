@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">TuGanadoApp</string>
+
+    <string name="login_tittle">TU GANADO</string>
+    <string name="login_hintDocumentNumber">Ingresar DNI</string>
+    <string name="login_hintPassword">Ingresar Contraseña</string>
+    <string name="login_login">INICIAR SESIÓN</string>
+    <string name="login_signup">REGISTRATE</string>
+
+    <string name="signup_documentNumber">Documento de identidad</string>
+    <string name="signup_name">Nombre completo</string>
+    <string name="signup_emailAddress">Correo electrónico</string>
+    <string name="signup_password">Contraseña</string>
+    <string name="signup_address">Dirección</string>
+    <string name="signup_phoneNumber">Teléfono</string>
+    <string name="signup_register">Registrar</string>
+    <string name="signup_privacy">Al hacer clic en Registrar acepta los términos y cndiciones de la política de privacidad.</string>
+
+    <string name="welcome_tittle">¡Bienvenido!</string>
+    <string name="welcome_register">Registro</string>
+    <string name="welcome_report">Reporte</string>
+    <string name="welcome_exit">Salir</string>
+    <string name="welcome_message">La mejor la aplicación para el control de ganado</string>
+
+    <string name="livestock_birthofDate">Fecha de nacimiento</string>
+    <string name="livestock_gender">Sexo</string>
+    <string-array name="livestock_gender_array">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+    <string name="livestock_type">Tipo Ganado</string>
+    <string name="livestock_race">Raza</string>
+    <string name="livestock_color">Color</string>
+    <string name="livestock_location">Ubicación</string>
+    <string name="livestock_gallery">Galeria</string>
+    <string name="livestock_camera">Camara</string>
+    <string name="livestock_description">Deberá de seleccionar una foto de su galería de imagenes o tomar una foto para poder continuar con el registro de ganado. Se muestra 2 opciones la cual deberá dar click.</string>
+    <string name="livestock_register">Registrar</string>
+
+    <string name="item_race">Raza:</string>
+    <string name="item_gender">Sexo:</string>
+    <string name="item_color">Color:</string>
+    <string name="item_years">Edad:</string>
+    <string name="item_owner">Propietario:</string>
+    <string name="item_contact">Contactar</string>
+    <string name="item_map">Ubicación</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "411138145381",
+    "firebase_url": "https://yourlivestock-app.firebaseio.com",
+    "project_id": "yourlivestock-app",
+    "storage_bucket": "yourlivestock-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411138145381:android:6145b904f77ccc2ee59a8c",
+        "android_client_info": {
+          "package_name": "com.upc.yourlivestock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411138145381-8k36u8ko94fbehukmfhp3hvtsani5aol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVGIgK_VZga2SaAQJAUwK_L7lB1Fos3is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411138145381-8k36u8ko94fbehukmfhp3hvtsani5aol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

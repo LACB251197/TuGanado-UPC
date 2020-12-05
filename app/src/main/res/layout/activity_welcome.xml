@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="165dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="50px"
+        app:srcCompat="@drawable/logindraw" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="70px"
+        android:text="@string/welcome_tittle" />
+
+    <TextView
+        android:id="@+id/viewClientName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50px"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnWelcomeRegister"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:onClick="onClick"
+        android:text="@string/welcome_register" />
+
+    <Button
+        android:id="@+id/btnWelcomeReport"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70px"
+        android:onClick="onClick"
+        android:text="@string/welcome_report" />
+
+    <Button
+        android:id="@+id/btnExit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:onClick="onClick"
+        android:text="@string/welcome_exit"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_message" />
+
+
+</LinearLayout>
